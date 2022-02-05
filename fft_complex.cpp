@@ -94,7 +94,7 @@ void prec() {
 	for (int lg = 0; lg < L; ++lg) {
 		int bl = (1 << lg);
 		for (int i = 0; i < bl; ++i) {
-			w[ptr] = cm(cos(i * PI / bl), sin(i * PI / bl));
+			w[ptr] = cm(cos(i * PI / bl), sin(i * PI / bl)); // root(1, 2 * bl)
 			wi[ptr] = cm(w[ptr].re, -w[ptr].im);
 			++ptr;
 		}
